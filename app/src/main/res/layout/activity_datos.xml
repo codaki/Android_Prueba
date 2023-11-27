@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Datos">
+
+    <TextView
+        android:id="@+id/tv_TituloPag3"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:text="Perfil"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"  />
+
+    <TextView
+        android:id="@+id/tv_NombreUsuario"
+        android:layout_width="110dp"
+        android:layout_height="67dp"
+        android:text="Nombre del usuario: "
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/tv_FechaNacUsuario"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:text="Fecha de Nacimiento: "
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_NombreUsuario"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/tv_Edad"
+        android:layout_width="114dp"
+        android:layout_height="22dp"
+        android:text="Edad: "
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_FechaNacUsuario"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <EditText
+        android:id="@+id/et_NombreIngresado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nombre..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="60dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_NombreUsuario"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229"
+        app:layout_constraintWidth_min="300dp"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/et_FechaIngresada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_min="300dp"
+        app:layout_constraintHeight_min="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Fecha..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toEndOf="@+id/tv_FechaNacUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/et_NombreIngresado"
+        app:layout_constraintVertical_bias="0.069"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/et_Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Edad..."
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="60dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_Edad"
+        app:layout_constraintTop_toBottomOf="@+id/et_FechaIngresada"
+        app:layout_constraintVertical_bias="0.081"
+        app:layout_constraintWidth_min="300dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
